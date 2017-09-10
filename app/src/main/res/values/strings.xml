@@ -17,4 +17,7 @@
     <string name="title_activity_login">Sign in</string>
     <string name="add_item">Add New Item</string>
     <string name="action_logout">Logout</string>
+    <string name="or_text">Or</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="loading">Loading...</string>
 </resources>

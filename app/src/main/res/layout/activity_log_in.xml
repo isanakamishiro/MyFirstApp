@@ -9,48 +9,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.isanakamishiro.myfirstapp.LogInActivity">
 
-    <EditText android:id="@+id/emailField"
+    <EditText
+        android:id="@+id/emailField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:hint="@string/email_hint"
-        android:layout_alignParentStart="true">
+        android:inputType="textEmailAddress">
 
         <requestFocus />
     </EditText>
 
-    <EditText android:id="@+id/passwordField"
+    <EditText
+        android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/emailField"
+        android:layout_alignStart="@+id/emailField"
         android:layout_below="@+id/emailField"
         android:ems="10"
         android:hint="@string/password_hint"
-        android:inputType="textPassword"
-        android:layout_alignStart="@+id/emailField">
+        android:inputType="textPassword">
 
     </EditText>
 
-    <Button android:id="@+id/loginButton"
+    <Button
+        android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/passwordField"
+        android:layout_alignStart="@+id/passwordField"
         android:layout_below="@+id/passwordField"
-        android:text="@string/login_button_label"
-        android:layout_alignStart="@+id/passwordField">
+        android:text="@string/login_button_label">
 
     </Button>
 
-    <TextView android:id="@+id/signUpText"
+    <TextView
+        android:id="@+id/orText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up_text"
         android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp">
-    </TextView>
+        android:text="@string/or_text" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orText" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_up_text"></TextView>
 
 </RelativeLayout>
