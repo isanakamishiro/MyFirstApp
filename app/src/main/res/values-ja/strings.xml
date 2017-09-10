@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="action_settings">設定</string>
+    <string name="email_hint">メールアドレス</string>
+    <string name="password_hint">パスワード</string>
+    <string name="login_button_label">ログイン</string>
+    <string name="sign_up_text">サインアップ</string>
+    <string name="sign_up_button_label">サインアップ</string>
+    <string name="signup_error_message">メールアドレスとパスワードを必ず入れてください</string>
+    <string name="signup_error_title">Error!</string>
+    <string name="signup_success">アカウントが作成されました</string>
+    <string name="login_error_message">メールアドレスとパスワードを必ず入れてください</string>
+    <string name="login_error_title">Error!</string>
+    <string name="title_activity_login">サインイン</string>
+    <string name="add_item">追加</string>
+    <string name="action_logout">ログアウト</string>
+</resources>
